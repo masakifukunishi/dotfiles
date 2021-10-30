@@ -17,6 +17,8 @@ alias ga='git add'
 alias gc='git commit'
 alias gp='git push'
 alias gd='git diff'
+alias nrd='npm run dev'
+alias nrw='npm run watch'
 
 setopt no_beep
 setopt auto_cd #change directory without cd

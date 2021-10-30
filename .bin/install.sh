@@ -48,7 +48,7 @@ fi
 
 ## vim plugins
 # make directory 
-tpope_path=~/.config/nvim/pack/tpope/start
+tpope_path="${HOME}/.config/nvim/pack/tpope/start"
 if [ ! -e $tpope_path ];
 then
   command printf "${INFO_COLOR}" "[info][tpope_path] does not exist"
@@ -58,7 +58,7 @@ else
   command printf "${INFO_COLOR}" "[info][tpope_path] already exists"
 fi
 
-airblade_path=~/.config/nvim/pack/airblade/start
+airblade_path="${HOME}/.config/nvim/pack/airblade/start"
 if [ ! -e $airblade_path ];
 then
   command printf "${INFO_COLOR}" "[info][airblade_path] does not exist"
@@ -118,13 +118,14 @@ fi
 
 ## files
 # tmux
-command printf "${ESC}[${GREEN}%s${ESC}[m\n" "[info][tmux] deploy .tmux.conf"
+command printf "${INFO_COLOR}" "[info][tmux] deploy .tmux.conf"
 command cp ./files/.tmux.conf ~/
 
 # neovim
-command printf "${ESC}[${GREEN}%s${ESC}[m\n" "[info][neovim] deploy init.vim"
+command printf "${INFO_COLOR}" "[info][neovim] deploy init.vim"
 command cp ./files/init.vim ~/.config/nvim/init.vim
 
 #zsh
-command printf "${ESC}[${GREEN}%s${ESC}[m\n" "[info][zshrc] deploy .zshrc"
+command printf "${INFO_COLOR}" "[info][zshrc] deploy .zshrc"
+command cat ~/.zshrc.pre-oh-my-zsh >> ~/.zshrc
 command cat ./files/.zshrc >>  ~/.zshrc

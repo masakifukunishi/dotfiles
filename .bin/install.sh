@@ -8,7 +8,7 @@ function existsCmd () {
 }
 INFO_COLOR="${ESC}[${GREEN}%s${ESC}[m\n"
 
-COMMANDS=('nodebrew' 'git' 'zsh' 'tmux' 'tmux' 'neovim' 'fzf' 'curl' 'nvm')
+COMMANDS=('nodebrew' 'git' 'zsh' 'tmux' 'neovim' 'fzf' 'curl' 'nvm')
 
 ## brew
 if ! existsCmd brew;

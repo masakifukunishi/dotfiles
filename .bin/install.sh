@@ -68,19 +68,6 @@ else
   command printf "${INFO_COLOR}" "[info][airblade_path] already exists"
 fi
 
-# fugitive
-figitive_path="${tpope_path}/fugitive"
-if [ ! -e $figitive_path ];
-then
-  command printf "${INFO_COLOR}" "[info][fugitive] does not exist"
-  command printf "${INFO_COLOR}" "[info][fugitive] install it..."
-  command cd $tpope_path
-  command git clone https://tpope.io/vim/fugitive.git
-  command vim -u NONE -c "helptags fugitive/doc" -c q
-else
-  command printf "${INFO_COLOR}" "[info][fugitive] already exists"
-fi
-
 # commentary
 commentary_path="${tpope_path}/commentary"
 if [ ! -e $figitive_path ];

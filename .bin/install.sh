@@ -104,10 +104,6 @@ else
 fi
 
 ## files
-# tmux
-command printf "${INFO_COLOR}" "[info][tmux] deploy .tmux.conf"
-command cp ./files/.tmux.conf ~/
-
 # neovim
 command printf "${INFO_COLOR}" "[info][neovim] deploy init.vim"
 command cp ./files/init.vim ~/.config/nvim/init.vim

@@ -6,19 +6,6 @@ export NVM_DIR="$HOME/.nvm"
 alias vi="nvim"
 alias vim="nvim"
 alias view="nvim -R"
-alias zshconfig="vim ~/.zshrc"
-alias ohmyzsh="vim ~/.oh-my-zsh"
-alias g='git'
-alias gs='git status'
-alias gb='git branch'
-alias gch='git checkout'
-alias gchb='git checkout -b'
-alias ga='git add'
-alias gc='git commit'
-alias gp='git push'
-alias gd='git diff'
-alias nrd='npm run dev'
-alias nrw='npm run watch'
 
 setopt no_beep
 setopt auto_cd #change directory without cd
